@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>Stock Web Application</title>
+		<meta name="description" content="form input controls">
+		<meta name="keywords" content="html sample page">
+	</head>
+    <body>
+        <h1>Stock Web Application</h1>
+        <form action="/stock_result" method="post">
+            <p>Stock Symbol: <input type="text" name="symbol" required/></p>
+            <input type="checkbox" name="OpenValue" id="OpenValue"><label for="OpenValue">Opening Value</label>
+            <br />
+            <input type="checkbox" name="High" id="High"><label for="High">High</label><br />
+            <input type="checkbox" name="Low" id="Low"><label for="Low">Low</label><br />
+            <input type="checkbox" name="CurrPrice" id="CurrPrice"><label for="CurrPrice">Current Price</label>
+            <hr />
+            <input type="submit" value="Get Stock Info">
+        </form>
+    </body>
+</html>
