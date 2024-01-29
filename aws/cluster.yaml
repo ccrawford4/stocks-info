@@ -3,10 +3,10 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: eks-cluster-1
+  name: stock-cluster
   region: {env.AWS_REGION}
   tags:
-    project: eks-cluster-project
+    project: stocks-project
 
 nodeGroups:
   - name: worker-node

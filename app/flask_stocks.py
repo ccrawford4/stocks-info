@@ -68,6 +68,6 @@ def fPrintStock(): # Initalizes a function fPrintStock
     return top + body # Returns the string
 
 if __name__ == '__main__': # Sees if the file is the main file 
-    app.run(host='0.0.0.0', port= 5000, debug='True') # Creates a web server and runs it on port 4999
+    app.run(host='0.0.0.0', port=80, debug='True') # Creates a web server and runs it on port 4999
 
 
