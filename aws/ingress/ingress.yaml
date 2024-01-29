@@ -1,21 +1,28 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-    name: quote-pod-info
+    name: stock-pod-info
     namespace: staging
     annotations:
         alb.ingress.kubernetes.io/scheme: internet-facing
         alb.ingress.kubernetes.io/target-type: instance
-        alb.ingress.kubernetes.io/tags: Environment=staging,Team=eks-cluster-project
+        alb.ingress.kubernetes.io/tags: Environment=staging,Team=stocks-project
 spec:
   ingressClassName: alb
   rules:
     - http:
         paths:
           - path: /
-            pathType: Exact
+            pathType: Prefix
             backend:
               service:
-                name: quote-app
+                name: stocks-app
+                port:
+                  number: 80
+          - path: /stock_result
+            pathType: Prefix
+            backend:
+              service:
+                name: stocks-app
                 port:
                   number: 80

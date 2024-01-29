@@ -2,13 +2,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: quote-app
+  name: stocks-app
   namespace: staging
 spec:
   ports:
     - port: 80
-      targetPort: 8080
+      targetPort: 80
       protocol: TCP
   type: NodePort
   selector:
-    app: quote-app
+    app: stocks-app
