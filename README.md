@@ -1,7 +1,7 @@
 # Project: Real-Time Stock Data Application on AWS EKS
 
 ## Overview
-This project showcases the deployment of a Python Flask application on AWS Elastic Kubernetes Service (EKS), utilizing Kubernetes, EKS clusters, and Docker containerization. **The live URL has been suspended for cost purposes. This project will be migrated to AWS Lambda to reduce costs**.
+This project showcases the deployment of a Python Flask application on AWS Elastic Kubernetes Service (EKS), utilizing Kubernetes, EKS clusters, and Docker containerization. **The live URL has been suspended at this time for cost purposes.**
 
 ## Key Features
 
