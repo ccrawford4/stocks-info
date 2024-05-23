@@ -1,4 +1,5 @@
 import requests # Imports requests library
+import os
 
 def main(): # Initializes main function
     symbol = 'AAPL' # Hardcodes the Apple Stock symbol and initalizes it with symbol
@@ -9,6 +10,7 @@ def main(): # Initializes main function
 def fGetStock(pSymbol): # Initalizes fGetStock function with pSymbol as a parameter
     string = '' # Creates an empty string
     string += 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&' # Adds to the string the first part of the link
+    API_KEY = os.
     string += 'datatype=csv&apikey=I0X6GPR31SIUP3MF&' # Adds to the string the second part of the link with API key
     string += f'symbol={pSymbol}' # Adds to string the last part with the pSymbol parameter
     stockResponse = requests.get(string) # Uses requests library to get the value of the API link
