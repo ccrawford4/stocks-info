@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
       - name: stocks-app
-        image: ccrawford4/stocks-app:latest
+        image: docker.io/ccrawford6/stocks-info:latest
         ports:
         - containerPort: 80
