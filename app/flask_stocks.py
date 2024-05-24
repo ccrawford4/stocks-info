@@ -91,6 +91,6 @@ def fPrintStock():
         return top + body
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80, debug='False') # Creates a web server and runs it on port 4999
+    app.run(host='0.0.0.0', port=5000, debug='False') # Creates a web server and runs it on port 4999
 
 
